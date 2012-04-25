@@ -20,6 +20,7 @@ public class StartActivity extends Activity {
     
     @Click(R.id.btnStart)
     public void onClickStart(){
+    	finish();
     	MainActivity_.intent(this).start();
     }
     
