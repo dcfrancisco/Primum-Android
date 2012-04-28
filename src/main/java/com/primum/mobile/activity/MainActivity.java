@@ -30,6 +30,12 @@ public class MainActivity extends Activity {
 		ConfigActivity_.intent(this).start();
 	}
 	
+	@Click(R.id.imgNewTest)
+	void clickOnNewTest(){
+		PatientData1Activity_.intent(this).start();
+	}
+	
+	
 	@Pref
 	PrimumPrefs_ primumPrefs; 
 	private static String TAG = "MainActivity";
