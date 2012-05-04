@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.googlecode.androidannotations.annotations.Click;
 import com.googlecode.androidannotations.annotations.EActivity;
@@ -18,6 +19,16 @@ public class ResultActivity extends Activity {
 		Log.i(TAG, "onCreate");
         setContentView(R.layout.result);
     }
+    
+    @Click(R.id.btnSave)
+   	void clickOnSave() {
+    	Toast.makeText(this, "Test correctly saved.", Toast.LENGTH_LONG).show();
+   	}
+    
+    @Click(R.id.btnSubmit)
+   	void clickOnSubmit() {
+    	Toast.makeText(this, "Test submited correctly.", Toast.LENGTH_LONG).show();
+   	}
     
     @Click(R.id.btnHome)
    	void clickOnHome() {

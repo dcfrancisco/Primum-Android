@@ -35,11 +35,11 @@
             android:text="Save" />
 
         <Button
-            android:id="@+id/btnSaveAndUpload"
+            android:id="@+id/btnSubmit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Save and Upload" />
+            android:text="Submit" />
     </TableRow>
 
     <TableRow
