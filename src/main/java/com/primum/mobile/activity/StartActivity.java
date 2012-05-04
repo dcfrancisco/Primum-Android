@@ -24,6 +24,11 @@ public class StartActivity extends Activity {
     	MainActivity_.intent(this).start();
     }
     
+    @Click(R.id.btnExit)
+    public void onClickExit(){
+    	finish();
+    }
+    
     private static String TAG = "StartActivity";
 }
 
