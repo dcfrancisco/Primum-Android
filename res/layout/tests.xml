@@ -22,36 +22,30 @@
                     android:id="@+id/radioButton1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Device 1"
+                    android:text="Electrocardiogram"
                     android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Device 2"
+                    android:text="Weight"
                     android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/radioButton3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Device 3"
+                    android:text="Oxygen in blood"
                     android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/radioButton4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Device 4"
+                    android:text="Blood pressure"
                     android:textColor="#000000" />
 
-                <RadioButton
-                    android:id="@+id/radioButton5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Device 5"
-                    android:textColor="#000000" />
             </RadioGroup>
         </TableRow>
 

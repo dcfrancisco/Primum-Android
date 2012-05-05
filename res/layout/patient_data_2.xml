@@ -124,12 +124,12 @@
                     android:text="Back" />
 
                 <Button
-                    android:id="@+id/btnNext"
+                    android:id="@+id/btnStartTest"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_weight="1"
-                    android:text="Next" />
+                    android:text="Start Test" />
             </LinearLayout>
         </TableRow>
     </LinearLayout>

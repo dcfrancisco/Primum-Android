@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 	
 	@Click(R.id.imgNewTest)
 	void clickOnNewTest(){
-		PatientData1Activity_.intent(this).start();
+		TestsActivity_.intent(this).start();
 	}
 	
 	
