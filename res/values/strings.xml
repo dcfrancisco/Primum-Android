@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello Primum-Android!</string>
     <string name="app_name">Primum</string>
+    <string name="device_id">Device ID</string>
+    <string name="device_pass">Device pass</string>
+    <string name="service_url">Service URL</string>
+    <string name="service_user_name">Service user name</string>
+    <string name="service_pass">Service pass</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="new_test">New Test</string>
+    <string name="configuration">Configuration</string>
+    <string name="patient_id">Patient ID</string>
+    <string name="get">Get</string>
+    <string name="name">Name</string>
+    <string name="surname_1">Surname 1</string>
+    <string name="surname_2">Surname 2</string>
+    <string name="next">Next</string>
+    <string name="birth_date">Birth date</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="back">Back</string>
+    <string name="start_test">Start Test</string>
+    <string name="test_finished">Test finished!</string>
+    <string name="submit">Submit</string>
+    <string name="home">Home</string>
+    <string name="start">Start</string>
+    <string name="exit">Exit</string>
+    <string name="electrocardiogram">Electrocardiogram</string>
+    <string name="oxygen_in_blood">Oxygen in blood</string>
+    <string name="blood_pressure">Blood pressure</string>
+    <string name="not_all_preferences_set">Not all preferences set!</string>
+    <string name="preferences_saved">Preferences saved</string>
+    <string name="please_enter_a_valid_patient_id">Please enter a valid patient ID</string>
+    <string name="loading_please_wait">Loading. Please wait...</string>
+    <string name="user_not_found_please_enter_data_manually">User not found. Please enter data manually.</string>
+    <string name="performing_test_please_wait">Performing test. Please wait...</string>
+    <string name="test_correctly_saved">Test correctly saved.</string>
+    <string name="test_submited_correctly">Test submited correctly.</string>
 </resources>

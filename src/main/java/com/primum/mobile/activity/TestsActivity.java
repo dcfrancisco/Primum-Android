@@ -27,8 +27,7 @@ public class TestsActivity extends Activity {
 	void clickOnBack() {
     	finish();
 	}
-    
-    
+     
     private static String TAG = "TestsActivity";
 }
 

@@ -22,28 +22,28 @@
                     android:id="@+id/radioButton1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Electrocardiogram"
+                    android:text="@string/electrocardiogram"
                     android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Weight"
+                    android:text="@string/weight"
                     android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/radioButton3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Oxygen in blood"
+                    android:text="@string/oxygen_in_blood"
                     android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/radioButton4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Blood pressure"
+                    android:text="@string/blood_pressure"
                     android:textColor="#000000" />
 
             </RadioGroup>
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_weight="1"
-                    android:text="Back" />
+                    android:text="@string/back" />
 
                 <Button
                     android:id="@+id/btnStart"
@@ -75,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_weight="1"
-                    android:text="Start" />
+                    android:text="@string/start" />
             </LinearLayout>
         </TableRow>
     </LinearLayout>

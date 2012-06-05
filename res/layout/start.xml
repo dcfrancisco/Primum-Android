@@ -43,14 +43,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_weight="1"
-            android:text="Start" />
+            android:text="@string/start" />
 
         <Button
             android:id="@+id/btnExit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Exit" />
+            android:text="@string/exit" />
     </TableRow>
 
 </LinearLayout>

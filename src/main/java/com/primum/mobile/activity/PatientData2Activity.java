@@ -30,7 +30,7 @@ public class PatientData2Activity extends Activity {
 	@Click(R.id.btnStartTest)
 	void clickOnNext() {
 		dialog = ProgressDialog.show(this, "",
-				"Performing test. Please wait...", true);
+				getString(R.string.performing_test_please_wait), true);
 		dialog.show();
 		performTest(0);
 	}
@@ -50,7 +50,7 @@ public class PatientData2Activity extends Activity {
     @UiThread
 	void testFinished(){
 		dialog.cancel();
-		Toast.makeText(this, "Test finished!", Toast.LENGTH_LONG).show();
+		Toast.makeText(this, R.string.test_finished, Toast.LENGTH_LONG).show();
 		finish();
 		ResultActivity_.intent(this).start();
 	}

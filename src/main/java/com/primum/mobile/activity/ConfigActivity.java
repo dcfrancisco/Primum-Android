@@ -36,11 +36,11 @@ public class ConfigActivity extends Activity {
 			.apply();
 			
 		if(!PrefUtils.allPrefsSet(primumPrefs)){
-			Toast.makeText(this, "Not all prefs set!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, R.string.not_all_preferences_set, Toast.LENGTH_SHORT).show();
 		}
 		else{
 			finish();
-			Toast.makeText(this, "Preferences saved!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, R.string.preferences_saved, Toast.LENGTH_SHORT).show();
 			MainActivity_.intent(this).start();
 		}
 
@@ -51,7 +51,7 @@ public class ConfigActivity extends Activity {
 	@Click(R.id.btnCancel)
 	void clickOnCancel(){
 		if(!PrefUtils.allPrefsSet(primumPrefs)){
-			Toast.makeText(this, "Not all prefs set!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "R.string.not_all_preferences_set", Toast.LENGTH_SHORT).show();
 		}
 		else{
 			finish();

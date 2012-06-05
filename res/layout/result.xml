@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|center_horizontal"
-            android:text="Test finished!"
+            android:text="@string/test_finished"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="#000000" />
     </TableRow>
@@ -32,14 +32,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Save" />
+            android:text="@string/save" />
 
         <Button
             android:id="@+id/btnSubmit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Submit" />
+            android:text="@string/submit" />
     </TableRow>
 
     <TableRow
@@ -51,7 +51,7 @@
             android:id="@+id/btnHome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Home" />
+            android:text="@string/home" />
     </TableRow>
 
 </LinearLayout>

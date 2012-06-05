@@ -22,12 +22,14 @@ public class ResultActivity extends Activity {
     
     @Click(R.id.btnSave)
    	void clickOnSave() {
-    	Toast.makeText(this, "Test correctly saved.", Toast.LENGTH_LONG).show();
+    	//TODO:Save test locally
+    	Toast.makeText(this, R.string.test_correctly_saved, Toast.LENGTH_LONG).show();
    	}
     
     @Click(R.id.btnSubmit)
    	void clickOnSubmit() {
-    	Toast.makeText(this, "Test submited correctly.", Toast.LENGTH_LONG).show();
+    	//TODO:Save test locally and send to server
+    	Toast.makeText(this, R.string.test_submited_correctly, Toast.LENGTH_LONG).show();
    	}
     
     @Click(R.id.btnHome)
