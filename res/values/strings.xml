@@ -37,4 +37,7 @@
     <string name="performing_test_please_wait">Performing test. Please wait...</string>
     <string name="test_correctly_saved">Test correctly saved.</string>
     <string name="test_submited_correctly">Test submited correctly.</string>
+    <string name="patient_password">Patient Password</string>
+    <string name="patient_fixed">Patient fixed.</string>
+    <string name="clear">Clear</string>
 </resources>

@@ -5,9 +5,10 @@ import com.googlecode.androidannotations.annotations.sharedpreferences.SharedPre
 
 @SharedPref(value=Scope.UNIQUE)
 public interface PrimumPrefs {
-	String deviceId();
-	String devicePass();
 	String serviceUrl();
 	String serviceUser();
 	String servicepass();
+	
+	String patientId();
+	String patientPass();
 }

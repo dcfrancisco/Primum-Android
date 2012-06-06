@@ -24,9 +24,17 @@
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name=".activity.PatientData1Activity_"
+            android:name=".activity.DeviceConfigActivity_"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
+        <activity
+            android:name=".activity.PatientConfigActivity_"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.PatientData1Activity_"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
         <activity
             android:name=".activity.TestsActivity_"
             android:theme="@android:style/Theme.NoTitleBar" >
