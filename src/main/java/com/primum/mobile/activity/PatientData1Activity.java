@@ -41,10 +41,13 @@ public class PatientData1Activity extends Activity {
 		askForPatientData(txPatientId.getText().toString());
 	}
 	
-	@Click(R.id.btnNext)
-	void clickOnNext() {
+	@Click(R.id.btnStartTest)
+	void clickOnStartTest() {
 		if(validateForm()){
-			PatientData2Activity_.intent(this).start();
+			dialog = ProgressDialog.show(this, "",
+					getString(R.string.performing_test_please_wait), true);
+			dialog.show();
+			performTest(0);
 		}
 	}
 	
@@ -79,6 +82,26 @@ public class PatientData1Activity extends Activity {
 			populateFileds(patient);
 		}
 		
+	}
+	
+	@Background
+	void performTest(long testId) {
+		
+		try {
+			Thread.currentThread().sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		testFinished();
+	}
+    
+    @UiThread
+	void testFinished(){
+		dialog.cancel();
+		Toast.makeText(this, R.string.test_finished, Toast.LENGTH_LONG).show();
+		finish();
+		ResultActivity_.intent(this).start();
 	}
 	
 	private void populateFileds(Patient patient) {

@@ -28,10 +28,6 @@
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name=".activity.PatientData2Activity_"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
             android:name=".activity.TestsActivity_"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>

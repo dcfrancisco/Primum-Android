@@ -126,6 +126,31 @@
                 android:focusable="false"
                 android:ems="10" />
         </TableRow>
+        
+         <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/birth_date" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <DatePicker
+                android:id="@+id/datePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
 
 
         <TableRow
@@ -149,12 +174,12 @@
                     android:text="@string/cancel" />
 
                 <Button
-                    android:id="@+id/btnNext"
+                    android:id="@+id/btnStartTest"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_weight="1"
-                    android:text="@string/next" />
+                    android:text="@string/start_test" />
             </LinearLayout>
         </TableRow>
     </LinearLayout>

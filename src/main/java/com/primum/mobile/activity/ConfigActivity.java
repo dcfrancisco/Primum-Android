@@ -19,7 +19,6 @@ public class ConfigActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.config);
-		
 		populateLayout();
 	}
 	
