@@ -10,44 +10,40 @@
         android:layout_gravity="top"
         android:orientation="vertical" >
 
-        <TableRow
-            android:id="@+id/tableRow1"
+        <RadioGroup
+            android:id="@+id/rgTests"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp" >
 
-            <RadioGroup>
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/electrocardiogram"
+                android:textColor="#000000" />
 
-                <RadioButton
-                    android:id="@+id/radioButton1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/electrocardiogram"
-                    android:textColor="#000000" />
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weight"
+                android:textColor="#000000" />
 
-                <RadioButton
-                    android:id="@+id/radioButton2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/weight"
-                    android:textColor="#000000" />
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oxygen_in_blood"
+                android:textColor="#000000" />
 
-                <RadioButton
-                    android:id="@+id/radioButton3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/oxygen_in_blood"
-                    android:textColor="#000000" />
-
-                <RadioButton
-                    android:id="@+id/radioButton4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/blood_pressure"
-                    android:textColor="#000000" />
-
-            </RadioGroup>
-        </TableRow>
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_pressure"
+                android:textColor="#000000" />
+        </RadioGroup>
 
         <TableRow
             android:id="@+id/tableRow11"
