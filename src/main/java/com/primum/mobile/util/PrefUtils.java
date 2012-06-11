@@ -17,5 +17,10 @@ public class PrefUtils {
 				&& !primumPrefs.serviceUser().get().equals("")
 				&& !primumPrefs.servicepass().get().equals("");
 	}
+	
+	public static boolean isUserSelected(PrimumPrefs_ primumPrefs) {
+		return !primumPrefs.patientId().get().equals("")
+				&& !primumPrefs.patientPass().get().equals("");
+	}
 
 }

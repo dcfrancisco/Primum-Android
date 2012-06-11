@@ -86,7 +86,6 @@ public class PatientData1Activity extends Activity {
 	
 	@Background
 	void performTest(long testId) {
-		
 		try {
 			Thread.currentThread().sleep(5000);
 		} catch (InterruptedException e) {
