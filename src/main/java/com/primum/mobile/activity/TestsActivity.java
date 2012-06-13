@@ -1,7 +1,9 @@
 package com.primum.mobile.activity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.RadioGroup;
@@ -18,7 +20,7 @@ import com.primum.mobile.util.PrefUtils;
 import com.primum.mobile.util.PrimumPrefs_;
 
 @EActivity
-public class TestsActivity extends Activity {
+public class TestsActivity extends Activity implements DialogInterface.OnClickListener{
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -35,7 +37,7 @@ public class TestsActivity extends Activity {
     			PatientData1Activity_.intent(this).start();
     		}
     		else{
-    			ResultActivity_.intent(this).start();
+    			displayConfirmDialog();
     		}
     	}
     	else{
@@ -43,17 +45,39 @@ public class TestsActivity extends Activity {
     	}
 	}
     
-    
     @Click(R.id.btnBack)
 	void clickOnBack() {
     	finish();
+	}
+    
+    @Override
+	public void onClick(DialogInterface dialog, int which) {
+    	switch (which) {
+		case AlertDialog.BUTTON1:
+			ResultActivity_.intent(this).start();	
+			break;
+
+		case AlertDialog.BUTTON2:
+			//NOP
+			break;
+		}
+	}
+    
+	private void displayConfirmDialog() {
+		new AlertDialog.Builder(this)
+				.setTitle("Confirm user")
+				.setMessage("Perform test with patient " + primumPrefs.patientId().get() + "?")
+				.setIcon(android.R.drawable.ic_dialog_info)
+				.setPositiveButton(android.R.string.yes,this)
+				.setNegativeButton(android.R.string.no, this)
+				.show();
 	}
     
     @ViewById
     RadioGroup rgTests;
     @Pref
 	PrimumPrefs_ primumPrefs;
-    private ProgressDialog dialog;
     private static String TAG = "TestsActivity";
+	
 }
 
