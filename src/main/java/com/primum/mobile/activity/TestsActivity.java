@@ -35,38 +35,14 @@ public class TestsActivity extends Activity {
     			PatientData1Activity_.intent(this).start();
     		}
     		else{
-    			dialog = ProgressDialog.show(this, "",
-    					getString(R.string.performing_test_please_wait), true);
-    			dialog.show();
-    			performTest(selected);
+    			ResultActivity_.intent(this).start();
     		}
     	}
     	else{
     		Toast.makeText(this, R.string.select_one_test,  Toast.LENGTH_SHORT).show();
     	}
-    	
-    	
 	}
     
-    
-	@Background
-	void performTest(long testId) {
-		try {
-			Thread.currentThread().sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		testFinished();
-	}
-    
-    @UiThread
-	void testFinished(){
-		dialog.cancel();
-		Toast.makeText(this, R.string.test_finished, Toast.LENGTH_LONG).show();
-		finish();
-		ResultActivity_.intent(this).start();
-	}
     
     @Click(R.id.btnBack)
 	void clickOnBack() {
